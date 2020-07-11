@@ -1,0 +1,145 @@
+// Variables
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$titletext: rgb(125, 157, 204);
+$titlehover: rgb(130, 180, 255);
+$line: rgba(214, 214, 214, 0.404);
+
+// Stylin'
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.project-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+    .project-description {
+        width: 150px;
+        text-align: justify;
+    }
+}
+
+.project-name {
+    font-size: 25px;
+    padding: 5px 10px;
+    border-bottom: 1px solid $line;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 35px 100px;
+
+    .project-title {
+        width: 100%;
+        font-size: 35px;
+        text-align: left;
+        color: $titletext;
+        margin: 20px 0;
+        border-bottom: 1px solid $line;
+        padding-bottom: 15px;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .project-box {
+            width: 160px;
+            height: 250px;
+            margin: 15px;
+            border: 1px solid silver;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .project-item {
+            font-size: 20px;
+            margin: 5px 0;
+            text-decoration: none;
+            color: black;
+            width: 90%;
+            height: 55px;
+            background: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+            animation-name: interact;
+            animation-duration: .5s;
+            border: 2px solid $titletext;
+            &:hover {
+                border: 2px solid $titlehover;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+            }
+
+            .project-social {
+                margin: 5px 10px 5px silver;
+                animation-name: social;
+                animation-duration: .5s;
+                width: 40px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+// Project Boxes
+
+#blackjack-box {
+    background: url('./blackjack.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bananas-box {
+    background: url('./bananas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#parkpal-box {
+    background: url('./parkpal.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gamepitch-box {
+    background: url('./gamepitch.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Animations
+
+@keyframes interact {
+    0% {
+        width: 0%
+    }
+    100% {
+        width: 90%
+    }
+}
+
+@keyframes social {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40px;
+    }
+}

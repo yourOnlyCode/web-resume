@@ -1,0 +1,111 @@
+// Variables
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$titletext: rgb(125, 157, 204);
+$line: rgba(214, 214, 214, 0.404);
+
+// Stylin'
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+table, tr, th {
+    border: 1px solid black;
+}
+
+table {
+    border-spacing: 5px;
+
+    th, td {
+        padding: 10px 25px;
+    }
+
+    .table-title {
+        font-size: 20px;
+        color: $titletext;
+    }
+
+    .table-item {
+        font-weight: 100;
+    }
+}
+
+.resume {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 100px;
+
+    .resume-skills-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .resume-skill-1 {
+            width: 300px;
+        }
+
+        .resume-skill-2 {
+            width: 75px;
+            height: 75px;
+            margin-right:25px;
+        }
+
+        .resume-skill-3 {
+            width: 100px;
+        }
+
+        .resume-skill-4 {
+            width: 90px;
+            margin: 0 20px;
+        }
+
+        .resume-skill-5 {
+            width: 100px;
+        }
+    }
+
+    .resume-break {
+        padding: 28px;
+    }
+
+    .resume-title {
+        width: 100%;
+        font-size: 35px;
+        text-align: left;
+        color: $titletext;
+        margin: 20px 0;
+        border-bottom: 1px solid $line;
+        padding-bottom: 15px;
+    }
+
+    .resume-about {
+        font-weight: 100;
+        text-align: justify;
+        line-height: 20px;
+    }
+
+    .resume-education {
+        width: 100%;
+        text-align: left;
+        font-weight: 100;
+
+        .education-title {
+            font-size: 20px;
+            font-weight: 300;
+            margin: 5px 0;
+        }
+
+        .education-subtitle {
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+
+        li {
+            margin: 5px;
+        }
+    }
+}
