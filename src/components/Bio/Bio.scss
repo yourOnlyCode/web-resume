@@ -8,7 +8,7 @@ $primarytext: rgb(228, 216, 216);
 // Stylin'
 
 .bio {
-    background: $mountains 100%;
+    background: $mountains;
     width: 100%;
     height: 600px;
     display: flex;
@@ -19,6 +19,10 @@ $primarytext: rgb(228, 216, 216);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width: 400px) {
+        width: 700px;
+        height: 400px;
+    }
 }
 
 .bio-title {

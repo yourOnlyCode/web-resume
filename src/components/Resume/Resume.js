@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Resume.scss'
 
 export default class Resume extends Component {
-    render() {
+    render() { 
         return (
             <div id='resume' className='resume'>
                 <div className='resume-break'></div>

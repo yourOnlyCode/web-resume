@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import './Bio.scss'
+import './Bio.scss' 
 
 export default class Bio extends Component {
     render() {

@@ -7,6 +7,9 @@ $line: rgba(214, 214, 214, 0.404);
 // Stylin'
 body {
     font-family: 'Roboto', sans-serif;
+    @media screen and (max-width: 400px) {
+        width: 700px;
+    }
 }
 
 table, tr, th {

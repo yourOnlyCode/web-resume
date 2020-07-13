@@ -37,6 +37,9 @@ $line: rgba(214, 214, 214, 0.404);
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 35px 100px;
+    @media screen and (max-width: 400px) {
+        width: 600px;
+    }
 
     .project-title {
         width: 100%;
