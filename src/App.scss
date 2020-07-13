@@ -11,6 +11,9 @@ html {
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  @media screen and (max-width: 400px) {
+  margin-right: -100px;
+}
 
   .navlink-top {
     position: fixed;

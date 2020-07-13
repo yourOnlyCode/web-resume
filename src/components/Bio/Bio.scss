@@ -20,8 +20,9 @@ $primarytext: rgb(228, 216, 216);
     background-repeat: no-repeat;
     background-size: cover;
     @media screen and (max-width: 400px) {
-        width: 700px;
-        height: 400px;
+        background: white;
+        width: 600px;
+        height: 200px;
     }
 }
 
@@ -30,4 +31,9 @@ $primarytext: rgb(228, 216, 216);
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
     color: white;
+    @media screen and (max-width: 400px) {
+        color: black;
+        margin-right: -100px;
+        margin-bottom: -150px;
+    }
 }
